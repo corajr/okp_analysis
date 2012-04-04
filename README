@@ -1,0 +1,9 @@
+okp_analysis is a set of Python scripts intended to create a visual representation of a "topic" on the online message board Okayplayer.
+
+On November 18, 2007, the musician Erykah Badu logged onto the forum in order to talk to her fans and answer questions about her then-upcoming album "New Amerykah Part 1: Fourth World War." The conversation was wide-ranging, and at times confusing as participants would refer to messages that others had not yet read. This is part of an attempt to work on the interpretation of the event; I hope to find whether there is a pattern to the messages to which Badu does or does not respond. It will be expanded as I delve farther into the data.
+
+As of this writing, the original forum topic can be found at <http://board.okayplayer.com/okp.php?az=show_topic&forum=17&topic_id=94679&mesg_id=94679>.
+
+The scripts parse.py and gen_json.py are designed to create a JSON serialization of the forum messages, building up a database of and users. If the forum_tree.html file, the messages are reproduced as nodes in a graph, using the d3.js library for layout. A basic tree layout, where the x-axis shows how many replies deep a thread is, and a modified version where the x-axis reflects the date and time of posting are both available.
+
+An online version can be found at <http://www.chrisjr.org/okp_analysis/>. Green circles are replies from Badu herself, and clicking on a circle will bring up the text of the message.
